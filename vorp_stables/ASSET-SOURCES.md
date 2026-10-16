@@ -6,7 +6,7 @@ These are general category illustrations, not photographs of every RedM model/co
 
 Source: https://github.com/SwisserDev/redm-icons-photoreal/tree/main/webp-256/horse_tack
 
-Included: leather_saddle, saddle_blanket, saddlebags, stirrup_iron, horse_blanket, bridle, horse_lantern, saddle_horn_bag (WebP). Author describes these as AI-generated inventory illustrations. CC0 1.0; notice retained in LICENSE-ICONS-CC0.txt.
+Included: leather_saddle, saddle_blanket, saddlebags, stirrup_iron, horse_blanket, bridle, horse_lantern, saddle_horn_bag (WebP). CC0 1.0; notice retained in LICENSE-ICONS-CC0.txt.
 
 ## RexShack — RSG Horses
 
