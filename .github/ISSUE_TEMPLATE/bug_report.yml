@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a reproducible beta problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Search existing issues first. Never paste passwords, keys, tokens, server.cfg or private identifiers. Exploits belong in a private advisory."
+  - type: input
+    id: environment
+    attributes:
+      label: Release and environment
+      description: Stable release, RedM artifact/game build, VORP Core and inventory version.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Installation / migration
+        - Menu / loading / camera
+        - Horse leading / call / dismissal
+        - Wagon spawn / dismissal / resale
+        - Equipment
+        - Cash / gold
+        - Player transfer / incoming request
+        - Inventory / persistence
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Go to Valentine…\n2. Open…\n3. Press…"
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Expected and actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant redacted F8 / server errors
+      description: Remove credentials, connection strings and identifiers. Screenshots welcome.
+  - type: textarea
+    id: isolation
+    attributes:
+      label: Related resources and staging test
+      description: Does it reproduce when custom scripts are disabled on staging?

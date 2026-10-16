@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Stable</title><link rel="stylesheet" href="bundle.min.css" /><script defer src="preload.min.js"></script><script defer src="app.min.js"></script></head><body><svg class="svg-library" aria-hidden="true"><defs><symbol id="horse" viewBox="0 0 160 120"><path
+            d="M26 63c-7 0-10 7-12 17-1 5-4 8-8 9 5 0 10-2 13-6l5-12 7-2 5 19-2 23h7l5-24-1-11 21 6 26-2 10 17 3 14h7l-2-21-10-16 8-13 7-20 10 4 9-6 1-8-13-14-4-14-5 9-8-5 1 12-9 9-7 15-10 6-26-1-19 2-10 8z"
+            fill="currentColor"
+          /><path
+            d="m113 19-8 8-7 17-10 8 12-3 7-16 10-9zM34 66l-2 13-5 15-6 17h7l10-18 6-15m40-4-5 18-3 19h7l5-17 6-14"
+            fill="currentColor"
+          /></symbol><symbol id="saddle" viewBox="0 0 160 120"><path
+            d="M24 86Q42 69 46 41L60 44Q71 61 105 53L118 31L129 34L132 61L143 77L131 93L112 85L88 82L66 93L47 89L39 102L27 100Z"
+            fill="currentColor"
+          /><path
+            d="M63 64Q87 76 115 65M53 84L49 110M121 83L124 107"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="5"
+          /></symbol><symbol id="wagon" viewBox="0 0 160 120"><path d="M24 73L20 33Q76 10 130 32L132 74ZM19 77H140V87H18Z" fill="currentColor" /><circle cx="42" cy="94" r="17" fill="none" stroke="currentColor" stroke-width="6" /><circle cx="116" cy="94" r="17" fill="none" stroke="currentColor" stroke-width="6" /></symbol></defs></svg><main id="stables" hidden><div class="shade" aria-hidden="true"></div><header class="catalog-heading enter"><h1 id="stable-title">VALENTINE STABLE</h1></header><nav class="tabs enter" aria-label="Stable sections"><button data-tab="horses" aria-pressed="true">HORSES</button
+        ><button data-tab="owned" aria-pressed="false">MY STABLE</button
+        ><button data-tab="tack" aria-pressed="false">TACK</button
+        ><button data-tab="wagons" aria-pressed="false">WAGONS</button
+        ><span id="tab-indicator" aria-hidden="true"></span></nav><aside class="wallet enter" aria-label="Wallet"><div><strong id="cash">0</strong><span class="currency cash">$</span></div><div><strong id="gold">0</strong><span class="currency gold">G</span></div></aside><div id="payment-method" role="group" aria-label="Payment currency" hidden><button type="button" data-currency="cash" aria-pressed="true">Cash</button><button type="button" data-currency="gold" aria-pressed="false">Gold</button></div><section class="catalog enter" aria-label="Selection"><div class="filter-row" id="filters"><label id="filter-label" for="filter">Equipment</label
+          ><select id="filter"></select></div><div class="filter-row" id="horse-filter-row" hidden><label for="horse-filter">Fit to</label
+          ><select id="horse-filter"></select></div><div class="eyebrow" id="eyebrow">AVAILABLE HORSES</div><div class="details" id="details"><div class="price-line"><span class="price-caption" id="price-caption">PRICE</span><strong id="price"></strong></div><h2 id="item-name"></h2></div><p id="empty" hidden>No rides yet. Find your first companion in Horses.</p><div class="coat-meta"><span id="variant-name"></span><span class="counter" id="counter"></span></div><div class="coat-navigation"><button id="previous-coat" class="coat-arrow previous" aria-label="Previous variant">‹</button><div class="coat-viewport"><div class="coat-list" id="coat-list"></div></div><button id="next-coat" class="coat-arrow next" aria-label="Next variant">›</button></div><div class="selection-track"><span id="selection-progress"></span></div><p id="category-caption"></p><p class="ownership" id="ownership"></p><div class="owned-actions" id="owned-actions" hidden><button data-action="active">Set active</button><button data-action="equipment">Equipment</button
+          ><button data-action="rename">Rename</button><button data-action="offer">Transfer</button
+          ><button data-action="cancelOffer" hidden>Cancel offer</button
+          ><button data-action="release">Release</button><button data-action="sell" hidden>Sell wagon</button
+          ><button data-action="store" hidden>Store wagon</button
+          ><button data-action="accept" hidden>Accept offer</button
+          ><button data-action="reject" hidden>Decline offer</button></div><div class="owned-actions" id="gear-actions" hidden><button id="owned-gear-toggle" aria-pressed="false">My collection</button
+          ><button id="remove-gear">Remove equipment</button></div></section><nav class="controls enter" aria-label="Stable controls"><button id="category-button">CATEGORY <span id="group-count"></span><kbd>↑↓</kbd></button
+        ><button id="primary-button"><span id="primary-label">BUY HORSE</span><kbd>↵</kbd></button
+        ><button id="rotate-button">ROTATE <kbd>←→</kbd></button
+        ><button id="close-button">EXIT <kbd class="exit-key">ESC</kbd></button></nav></main><div class="toast" id="toast" role="status" aria-live="polite"></div><section id="loading-screen" hidden aria-label="Preparing stable"><div class="loading-panel"><p class="eyebrow" id="loading-location">Stable</p><span class="loading-spinner" aria-hidden="true"></span><h2>Preparing your stable</h2><p>Loading horses, wagons and interface</p><div
+          id="loading-progress"
+          role="progressbar"
+          aria-label="Models loaded"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+        ><span id="loading-fill"></span></div><p id="loading-count">Preparing previews…</p><button id="loading-cancel">Cancel <kbd>ESC</kbd></button></div></section><dialog id="action-dialog"><form id="action-form"><p class="eyebrow" id="dialog-caption">MY STABLE</p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="dialog-fields"></div><p id="dialog-error" role="alert"></p><div class="dialog-controls"><button type="button" id="dialog-cancel">Cancel <kbd>ESC</kbd></button
+          ><button type="submit" id="dialog-submit">Confirm <kbd>↵</kbd></button></div></form></dialog></body></html>

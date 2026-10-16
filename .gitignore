@@ -1,0 +1,17 @@
+.env
+.env.*
+*.log
+*.cfg
+*.sql.gz
+*.zip
+*.mp4
+*.webm
+*.pyc
+__pycache__/
+.venv/
+node_modules/
+.test-results/
+playwright-report/
+server-data/
+.DS_Store
+Thumbs.db

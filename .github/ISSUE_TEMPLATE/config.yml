@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation and migration
+    url: https://github.com/editlxrd/330-stables-for-vorp/blob/main/docs/INSTALLATION.md
+    about: Start with the owner guides before reporting an installation issue.
+  - name: Private security report
+    url: https://github.com/editlxrd/330-stables-for-vorp/security/advisories/new
+    about: Do not publish exploit details or secrets in a normal issue.
