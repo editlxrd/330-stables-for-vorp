@@ -12,6 +12,21 @@ function StableStorage.empty(row)
         end
         -- Check both the per-ride ID and the legacy model/character bag.
         for _, id in ipairs({ 'stable_' .. row.id, row.modelname .. '_' .. row.charidentifier }) do
+            -- Native VORP returns false for unregistered bags, even when their DB contents are empty.
+            -- Registration creates runtime metadata only; it does not copy or clear stored contents.
+            if not exports.vorp_inventory:isCustomInventoryRegistered(id) then
+                exports.vorp_inventory:registerInventory({
+                    id = id,
+                    name = row.name or 'Stable storage',
+                    limit = Config.CustomMaxWeight[row.modelname] or Config.DefaultMaxWeight,
+                    acceptWeapons = true,
+                    shared = false,
+                    ignoreItemStackLimit = Config.StackInvIgnore[row.type],
+                })
+                if not exports.vorp_inventory:isCustomInventoryRegistered(id) then
+                    return false
+                end
+            end
             local items = exports.vorp_inventory:getCustomInventoryItems(id)
             local weapons = exports.vorp_inventory:getCustomInventoryWeapons(id)
             if
