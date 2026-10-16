@@ -84,6 +84,8 @@ PreviewCamera = { HorsesUseWagonSpot = true, HorseFov = 28.0, WagonFov = 60.0 },
 
 ## Beta limitations
 
+Native Stables 1.3 migration and one Inventory V2 revision now have [real server-side validation](docs/NATIVE-INVENTORY-VALIDATION.md), including items, weapons and restart persistence. This does not certify every inventory version or replace client UI acceptance.
+
 ### Planned next
 
 Horse needs/status (hunger, thirst, stamina), horse care/service and brushing, breeding, aging, full VORP Inventory acceptance and a more complete wagon-storage flow are on the [roadmap](ROADMAP.md). Initial inventory adapters/per-ride storage identities already exist; this does not mean every version or old-bag migration is certified. These are future directions, not all included features.
