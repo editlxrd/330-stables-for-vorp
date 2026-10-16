@@ -112,7 +112,24 @@ Free beta, best-effort maintenance: reports and pull requests are welcome; respo
 
 ## Screenshots, licence and credits
 
-Real gameplay screenshots will be added after capture. See [MEDIA.md](docs/MEDIA.md); no browser mockup is presented as evidence of native rendering.
+Captured in RedM on the VORP test server.
+
+![Horse catalogue](assets/screenshots/horse-catalogue.png)
+
+<details>
+<summary>My Stable, tack, wagons and horse leading</summary>
+
+![My Stable and owned horse management](assets/screenshots/my-stable.png)
+
+![Tack selection and equipment collection](assets/screenshots/tack.png)
+
+![Wagon catalogue with native draft team](assets/screenshots/wagon-catalogue.png)
+
+![Owned wagon, storage action and resale](assets/screenshots/my-wagons.png)
+
+![Native riding-horse leading](assets/screenshots/horse-leading.png)
+
+</details>
 
 Approximately **4,400 distributed runtime lines**, including Lua/config/catalogues and the minified UI build (roughly 7,500 lines before UI compilation). No Node/React/Python runtime dependency.
 

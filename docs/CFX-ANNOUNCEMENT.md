@@ -15,6 +15,34 @@ I would love server owners to try it on a staging copy of their server and repor
 - Per-ride storage identities and initial inventory adapters; full native inventory acceptance and old bag-content migration remain beta work.
 - English/Czech locales, notifications, loading progress, keyboard feedback and reduced-motion support.
 
+## In-game screenshots
+
+![Horse catalogue](https://raw.githubusercontent.com/editlxrd/330-stables-for-vorp/main/assets/screenshots/horse-catalogue.png)
+
+[details="My Stable, tack, wagons and horse leading"]
+
+**My Stable and owned horse management**
+
+![My Stable and owned horse management](https://raw.githubusercontent.com/editlxrd/330-stables-for-vorp/main/assets/screenshots/my-stable.png)
+
+**Tack selection and equipment collection**
+
+![Tack selection and equipment collection](https://raw.githubusercontent.com/editlxrd/330-stables-for-vorp/main/assets/screenshots/tack.png)
+
+**Wagon catalogue with native draft team**
+
+![Wagon catalogue with native draft team](https://raw.githubusercontent.com/editlxrd/330-stables-for-vorp/main/assets/screenshots/wagon-catalogue.png)
+
+**Owned wagon, storage action and resale**
+
+![Owned wagon, storage action and resale](https://raw.githubusercontent.com/editlxrd/330-stables-for-vorp/main/assets/screenshots/my-wagons.png)
+
+**Native riding-horse leading**
+
+![Native riding-horse leading](https://raw.githubusercontent.com/editlxrd/330-stables-for-vorp/main/assets/screenshots/horse-leading.png)
+
+[/details]
+
 ## Locations
 
 Valentine, Rhodes, Wapiti, Saint Denis, Strawberry, Blackwater, Tumbleweed, Colter, Van Horn, Emerald Ranch and Scarlett Meadows.
@@ -42,7 +70,7 @@ Harnessed wagon leading is currently disabled after the engine rejected the nati
 
 Please include versions, reproduction steps and redacted F8/server errors. Never post keys/passwords/player identifiers. Support is best effort; no guaranteed response time or custom integration is promised.
 
-Gameplay screenshots will be added to the topic. No universal performance figure is claimed; test with your map, game build and resources.
+No universal performance figure is claimed; test with your map, game build and resources.
 
 | | |
 |---|---|
@@ -53,5 +81,3 @@ Gameplay screenshots will be added to the topic. No universal performance figure
 | Requirements & dependencies | RedM, OneSync, VORP Core, oxmysql, compatible inventory |
 | Support | GitHub Issues, best effort |
 | Status | First public beta — server testing wanted |
-
-Posting notes: publish under **RedM Releases** on the Cfx.re forum and choose the free tag. Attach your actual gameplay screenshots before posting. This resource is not for FiveM/GTA V.
