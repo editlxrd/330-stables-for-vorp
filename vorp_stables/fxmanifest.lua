@@ -6,7 +6,7 @@ rdr3_warning(
 lua54('yes')
 author('330; VORP catalogue data by CrimsonFreak (MIT)')
 description('Frontier stable UI with VORP ownership, equipment and wagons')
-version('0.2.0-beta.1')
+version('0.2.0-beta.2')
 dependencies({ 'vorp_core', 'oxmysql', '/onesync' })
 shared_scripts({
     'shared/keys.lua',
